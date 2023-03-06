@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class HitungLuas {
     public static void main(String args[]){
 
@@ -16,7 +17,7 @@ class HitungLuas {
         System.out.println("=================================");
 
 
-        System.out.println("Hitung Luas Persegi");
+        System.out.println("Hitung Luas Persegi Panjang");
         System.out.println("=================================");
         int p,l,lpersegi;
 
@@ -28,5 +29,23 @@ class HitungLuas {
         System.out.println("Lebar\t:"+l);
         System.out.println("Luas Persegi Panjang\t:"+lpersegi);
         System.out.println("=================================");
+
+
+
+        System.out.println("Hitung Luas Persegi Panjang dengan Inputan");
+        System.out.println("=================================");
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan panjang: ");
+        double panjang = input.nextDouble();
+
+        System.out.print("Masukkan lebar: ");
+        double lebar = input.nextDouble();
+
+        double luas = panjang * lebar;
+        System.out.println("Luas persegi panjang adalah: " + luas);
+
+        System.out.println("=================================");
     }
+
 }
